@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Portfolio.</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Vaishnavi Sinha</span></h1>
+            <p>Computer Science Student & Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="about-text">I am a passionate software engineering student focused on building clean, responsive, and user-friendly web applications. I love turning complex problems into elegant code and continuously learning new technologies.</p>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5 / CSS3</div>
+            <div class="skill-card">JavaScript (ES6+)</div>
+            <div class="skill-card">C++ / Programming</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Task Tracker App</h3>
+                <p>A dynamic task management tool built with vanilla JavaScript, featuring live statistics and clean UI design.</p>
+            </div>
+            <div class="project-card">
+                <h3>Online Bookstore</h3>
+                <p>An e-commerce frontend interface layout utilizing modern CSS flexbox layouts and interactive components.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather Dashboard</h3>
+                <p>A weather forecasting web application fetching real-time data metrics via asynchronous API requests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <h2>Get In Touch</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Vaishnavi Sinha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
